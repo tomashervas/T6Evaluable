@@ -33,6 +33,7 @@ while read linea; do
 		maxUsuarios=$numUsuarios
 		maxGrupo=$nombreGrupo
 		maxGrupos=${nombreGrupo:0:-1}
+		onGrupos=false
 	elif [[ $numUsuarios -eq $maxUsuarios ]]; then
 		maxGrupos="$maxGrupos ${nombreGrupo:0:-1}"
 		onGrupos=true
